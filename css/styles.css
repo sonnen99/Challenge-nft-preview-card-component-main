@@ -21,23 +21,52 @@ hr {
     box-shadow: 0 0 40px #0C1729;
 }
 
+.image-box {
+    position: relative;
+}
+
 .card-img-top {
     border-radius: 10px;
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    align-items: center;
+    justify-content: baseline;
 }
 
-.view {
+.img-hover-overlay {
+    cursor: pointer;
+    background-color: #00FFF8;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
-    left: 43%;
-    top: 26%;
-    display: none;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    align-items: center;
+    justify-content: baseline;
+    border-radius: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
 }
 
-.image-box:hover {
-   
+.image-box:hover .img-hover-overlay {
+    opacity: 0.4;
+    visibility: visible;
+    z-index: 1;
 }
 
-.image-box:hover .view{
-    display: block;
+.image-box:hover .img-hover-overlay img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+.img-hover-overlay img {
+    width: 3rem;
+    height: 3rem;
 }
 
 .card-title {

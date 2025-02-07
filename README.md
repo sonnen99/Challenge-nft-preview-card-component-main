@@ -13,8 +13,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [What I learned](#what-i-learned)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -26,12 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/Screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/html-css-bootstrap-solution-B2_FQmfIYz)
+- Live Site URL: [live site URL](https://sonnen99.github.io/Challenge-nft-preview-card-component-main/)
 
 ## My process
 
@@ -44,22 +42,25 @@ Users should be able to:
 - Refactoring
 
 ### What I learned
+Creating an overlay for the card image.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.img-hover-overlay {
+    cursor: pointer;
+    background-color: #00FFF8;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 20rem;
+    height: 20rem;
+    align-items: center;
+    justify-content: baseline;
+    border-radius: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1;
 }
 ```
 
