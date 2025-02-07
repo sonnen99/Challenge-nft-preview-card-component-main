@@ -1,0 +1,101 @@
+body {
+    font-family: 'Outfit';
+    text-align: center;
+    background-color: #0D1A2D;
+    color: white;
+    padding: 5%;
+}
+
+hr {
+    color: #8AA9D8;
+    margin: 0;
+}
+
+.card {
+    background-color: #15273F;
+    color: white;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 22rem;
+    text-align: left;
+    box-shadow: 0 0 40px #0C1729;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.view {
+    position: absolute;
+    left: 43%;
+    top: 26%;
+    display: none;
+}
+
+.image-box:hover {
+   
+}
+
+.image-box:hover .view{
+    display: block;
+}
+
+.card-title {
+    padding: 20px 0;
+    text-decoration: none;
+}
+
+.card-title:hover {
+    color: #00FFF8;
+}
+
+.card-text {
+    font-weight: 100;
+    color: #8AA9D8;
+}
+
+.icon {
+    display: inline-flex;
+}
+
+.value-text {
+    display: inline-flex;
+    color: #00FFF8;
+    margin-left: 5px;
+}
+
+.time {
+    text-align: end;
+}
+
+.time-text {
+    font-weight: 300;
+    color: #8AA9D8;
+    display: inline-flex;
+    margin-left: 5px;
+}
+
+.name {
+    font-weight: 300;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.name:hover {
+    color: #00FFF8;
+}
+
+.avatar {
+    width: 30px;
+    margin: 10px 0;
+    border: white;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+
+.attribution {
+    margin-top: 20px;
+}
