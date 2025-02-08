@@ -53,7 +53,7 @@ hr {
 }
 
 .image-box:hover .img-hover-overlay {
-    opacity: 0.4;
+    opacity: 0.5;
     visibility: visible;
     z-index: 1;
 }
